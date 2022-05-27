@@ -1,4 +1,4 @@
-import{
+        import{
  Addresses ,
  Authentication,
  MenuContentPage ,
@@ -27,7 +27,7 @@ const payment: Payment = new Payment();
 
 describe("Buy a t-shirt", () => {
         it("then should be bought a t-shirt", () => {
-        menuContentPage.visitMenuContentPage();
+       menuContentPage.visitMenuContentPage();
         menuContentPage.goToTShirtsMenu();
         tshirts.selectTshirt(Cypress.env("nameProduct"));
         modalWindowCart.goToOrderSummary(); 
