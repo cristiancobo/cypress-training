@@ -10,4 +10,3 @@ class Addresses {
     }
 }
 export {Addresses }
-
