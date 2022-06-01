@@ -5,12 +5,8 @@
         "responseTimeout": 20000,
         "emailTest":"aperdomobo@gmail.com",
         "passwordTest":"WorkshopProtractor",
-<<<<<<< HEAD
         "nameProduct": "Faded Short Sleeve T-shirts",
         "dressesAmount":5,
         "dressesName": ["Printed Dress", "Printed Dress", "Printed Summer Dress","Printed Summer Dress", "Printed Chiffon Dress"]
-=======
-        "nameProduct": "Faded Short Sleeve T-shirts"
->>>>>>> main
     }
 }
