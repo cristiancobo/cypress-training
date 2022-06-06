@@ -16,8 +16,8 @@ export class Tshirts{
      }
     public selectTshirt(tshirtName:string) {
         this.findTShirtByName(tshirtName)
-        .contains(tshirtName)
-        .first()
+        //.contains(tshirtName)
+        //.first()
         .get(this.addToCartButton)
         .click();
     }

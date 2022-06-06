@@ -8,5 +8,19 @@
         "nameProduct": "Faded Short Sleeve T-shirts",
         "dressesAmount":5,
         "dressesName": ["Printed Dress", "Printed Dress", "Printed Summer Dress","Printed Summer Dress", "Printed Chiffon Dress"]
+    },
+
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
     }
+
+
 }
