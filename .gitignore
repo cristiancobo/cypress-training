@@ -7,7 +7,6 @@
 # website: https://www.cypress.io/
 
 cypress/results/*
-cypress/reports/*
 cypress/screenshots/*
 cypress/videos/*
 cypress/integration/examples/*

@@ -8,12 +8,13 @@ export class Tshirts{
       this.addToCartButton = '.ajax_add_to_cart_button.btn.btn-default';
     }
   
+    public findTShirtByName(tshirtName:string){
+      return cy.get(".product-name").filter(`[title="${tshirtName}"]`);
+     }
+    
     public selectTshirt(tshirtName:string) {
-      cy.get(this.tshirts)
-        .find('.product-name')
-        .contains(tshirtName)
-        .first()
+        this.findTShirtByName(tshirtName)
         .get(this.addToCartButton)
         .click();
-    }
+    }  
   }

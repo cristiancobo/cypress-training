@@ -25,13 +25,25 @@ const payment: Payment = new Payment();
 
 
 describe("Buy a t-shirt", () => {
+  let userCredentials: { emailTest: string, passwordTest: string };
+  let product: { productName: string; };
+  beforeEach(()=>{
+    cy.fixture("credentials").then((credentials) =>{
+      userCredentials = credentials;
+    });
+
+    cy.fixture("products").then((tShirtName) =>{
+      product = tShirtName;
+    });
+  });
+
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtsMenu();
-    tshirts.selectTshirt(Cypress.env("nameProduct"));
+    tshirts.selectTshirt(product.productName);
     modalWindowCart.goToOrderSummary();
     orderSummary.goToAuthentication();
-    authentication.login(Cypress.env("emailTest"), Cypress.env("passwordTest"));
+    authentication.login(userCredentials.emailTest, userCredentials.passwordTest);
     addresses.goToShipping();
     shipping.goToPayment();
     payment.payByBankWire();
