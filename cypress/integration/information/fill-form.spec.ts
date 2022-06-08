@@ -5,7 +5,18 @@ import {
 const information: Information = new Information();
 
 describe("When user fills the form", () => {
-  let personalInformation: {firstName: string, lastName: string, email: string, gender: string, mobileNumber: string, hobbies: string, currentAddress: string, state:string, city:string};
+  let personalInformation: {
+      firstName: string,
+      lastName: string,
+      email: string,
+      gender: string,
+      mobileNumber: string,
+      hobbies: string,
+      currentAddress: string,
+      state:string,
+      city:string
+    };
+
   beforeEach(()=>{
     cy.fixture("data").then((data) =>{
       personalInformation = data;
