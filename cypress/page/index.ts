@@ -11,3 +11,4 @@ export { ModalWindowCart } from '../page/t-shirts/modal-window-cart.page';
 export { Tshirts } from '../page/t-shirts/t-shirts.page';
 export { Dresses } from '../page/dresses/dresses.page'
 export {Information} from '../page/information/information.page'
+export { Upload } from '../page/upload/upload.page';

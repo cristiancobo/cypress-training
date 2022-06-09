@@ -1,6 +1,7 @@
 {
     "env":{
         "url":"http://automationpractice.com/index.php",
+        "urlUploadImage":"http://demo.automationtesting.in/FileUpload.html",
         "urlForm":"https://demoqa.com/automation-practice-form",
         "defaultCommandTimeout": 20000,
         "responseTimeout": 20000,
