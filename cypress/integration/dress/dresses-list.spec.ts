@@ -7,7 +7,7 @@ import {
 const menuContentPage: MenuContentPage = new MenuContentPage();
 const dresses: Dresses = new Dresses();
 
-describe("the user navigates to the dresses page should", () => {
+describe("The user navigates to the dresses page should", () => {
   let product: { dressesName: string[], dressesAmount:number };
 
   beforeEach(()=>{
